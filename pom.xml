@@ -35,12 +35,6 @@
 				<version>0.13</version>
 			</dependency>
 			<dependency>
-				<groupId>net.java.quickcheck</groupId>
-				<artifactId>quickcheck</artifactId>
-				<version>0.6</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
 				<groupId>org.hamcrest</groupId>
 				<artifactId>hamcrest-all</artifactId>
 				<version>1.3</version>
@@ -78,6 +72,7 @@
 		</plugins>
 	</build>
 	<modules>
+		<module>001-Annotation-theory</module>
 		<module>002-JUnit-Quickcheck</module>
 		<module>003-QuickTheory</module>
 		<module>004-Quickcheck</module>
