@@ -75,6 +75,5 @@
 		<module>001-Annotation-theory</module>
 		<module>002-JUnit-Quickcheck</module>
 		<module>003-QuickTheory</module>
-		<module>004-Quickcheck</module>
 	</modules>
 </project>
