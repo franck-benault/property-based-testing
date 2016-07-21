@@ -2,7 +2,7 @@ package net.franckbenault.propertybasedtesting;
 
 import static org.junit.Assert.*;
 
-import org.junit.experimental.theories.DataPoints;
+import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
@@ -18,12 +18,17 @@ import org.junit.runner.RunWith;
  *
  */
 @RunWith(Theories.class)
-public class IntroductionABTheoryTestCase {
+public class IntroductionABTheoryDataPointTestCase {
 
-	@DataPoints
-	public static int[] positiveIntegers() {
-		return new int[] {1 ,10 , 123456};
-	}
+	@DataPoint
+	public static int a=2;
+	
+	@DataPoint
+	public static int b=6;
+	
+	@DataPoint
+	public static int c=12;
+	
 	
 	
 	/**
