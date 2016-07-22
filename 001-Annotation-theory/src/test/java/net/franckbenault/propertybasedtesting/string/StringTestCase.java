@@ -29,6 +29,7 @@ public class StringTestCase {
 
 	@Theory
 	public void testConcat(String x, String y) {
+		System.out.println("x="+x+" ,y="+y);
 		assertEquals(x.length()+y.length(),(x+y).length());
 	}
 
