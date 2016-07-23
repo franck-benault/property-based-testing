@@ -3,7 +3,6 @@ package net.franckbenault.propertybasedtesting.string;
 import static org.junit.Assert.*;
 
 import org.junit.Assume;
-import org.junit.Test;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
