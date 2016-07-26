@@ -6,7 +6,6 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 
 import com.pholser.junit.quickcheck.Property;
