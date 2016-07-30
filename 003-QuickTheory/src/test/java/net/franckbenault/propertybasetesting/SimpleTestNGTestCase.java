@@ -1,12 +1,14 @@
 package net.franckbenault.propertybasetesting;
 
+import org.testng.annotations.Test;
+
 import static org.quicktheories.quicktheories.QuickTheory.qt;
-import static org.quicktheories.quicktheories.generators.SourceDSL.*;
+import static org.quicktheories.quicktheories.generators.SourceDSL.booleans;
+import static org.quicktheories.quicktheories.generators.SourceDSL.integers;
 
-import org.junit.Test;
 
-public class SimpleJUnitTestCase {
-	
+public class SimpleTestNGTestCase {
+
 	private int counter =0;
 	
 	private boolean isSomePositive(int i, int j ) {
@@ -39,5 +41,6 @@ public class SimpleJUnitTestCase {
 	    		)
 	    .check((b1,b2) -> isAssociative(b1,b2)); 
 	  }
+
 
 }
