@@ -6,9 +6,12 @@ import static org.quicktheories.quicktheories.generators.SourceDSL.integers;
 import org.junit.Test;
 
 public class IntegerTestCase {
+	
+	private int counter =0;
 
 	private boolean printOK(int i) {
-		System.out.println("i="+i);
+		counter++;
+		System.out.println("counter="+counter+ " i="+i);
 		return true;
 	}
 	
@@ -17,6 +20,7 @@ public class IntegerTestCase {
 	 */
 	@Test
 	public void testAllIntegerWithSeed() {
+		counter =0;
 		qt()
 		.withFixedSeed(0)
 	    .forAll(integers().all())
@@ -28,6 +32,7 @@ public class IntegerTestCase {
 	 */
 	@Test
 	public void testAllPositiveInteger() {
+		counter =0;
 		qt()
 		.withFixedSeed(0)
 	    .forAll(integers().allPositive())
@@ -39,6 +44,7 @@ public class IntegerTestCase {
 	 */
 	@Test
 	public void testAllNegativeIntegerUsingAssuming() {
+		counter =0;
 		qt()
 		.withFixedSeed(0)
 	    .forAll(integers().all())
