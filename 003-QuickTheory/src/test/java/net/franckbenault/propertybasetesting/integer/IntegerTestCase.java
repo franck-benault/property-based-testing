@@ -3,6 +3,7 @@ package net.franckbenault.propertybasetesting.integer;
 import static org.quicktheories.quicktheories.QuickTheory.qt;
 import static org.quicktheories.quicktheories.generators.SourceDSL.integers;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class IntegerTestCase {
@@ -37,6 +38,20 @@ public class IntegerTestCase {
 		.withFixedSeed(0)
 	    .forAll(integers().allPositive())
 	    .check((i) -> printOK(i)); 
+	}
+	
+	/**
+	 * shrinking
+	 * excepted smallest value 23
+	 */
+	@Test
+	@Ignore
+	public void testIntegerShrinking() {
+		counter =0;
+		qt()
+		.withFixedSeed(0)
+	    .forAll(integers().from(23).upTo(100000))
+	    .check((i) -> i>43); 
 	}
 	
 	/**
