@@ -55,7 +55,7 @@ public class IntegerTestCase {
 	}
 	
 	/**
-	 * all positive
+	 * all negative using assuming
 	 */
 	@Test
 	public void testAllNegativeIntegerUsingAssuming() {
@@ -67,4 +67,26 @@ public class IntegerTestCase {
 	    .check((i) -> printOK(i)); 
 	}
 
+	
+	
+	@Test
+	public void testBetween() {
+		counter =0;
+		qt()
+		.withFixedSeed(0)
+	    .forAll(integers().between(1, 100))
+	    .check((i) -> printOK(i)); 
+	}
+	
+	/**
+	 * other version for between
+	 */
+	@Test
+	public void testFromUpTo() {
+		counter =0;
+		qt()
+		.withFixedSeed(0)
+	    .forAll(integers().from(1).upTo(100))
+	    .check((i) -> printOK(i)); 
+	}
 }
