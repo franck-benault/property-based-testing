@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import static org.junit.Assert.assertTrue;
 
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
@@ -21,24 +22,34 @@ import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 @RunWith(JUnitQuickcheck.class)
 public class DummyTestCase {
 
+	private static String fullLog ="";
+	
 	@BeforeClass
 	public static void beforeClass() {
-		System.out.println("beforeClass");
+		fullLog+="BeforeClass";
+		assertTrue(fullLog.equals("BeforeClass"));
+		System.out.println("BeforeClass");
 	}
 	
 	@Before
 	public void before() {
-		System.out.println("before");
+		fullLog+="Before";
+		assertTrue(fullLog.startsWith("BeforeClassBefore"));
+		System.out.println("Before");
 	}
 	
 	@AfterClass
 	public static void afterClass() {
-		System.out.println("afterClass");
+		fullLog+="AfterClass";
+		assertTrue(fullLog.equals("BeforeClassBeforeAfterBeforeAfterBeforeAfterBeforeAfterAfterClass"));
+		System.out.println("AfterClass");
 	}
 	
 	@After
 	public void after() {
-		System.out.println("after");
+		fullLog+="After";
+		assertTrue(fullLog.startsWith("BeforeClassBeforeAfter"));
+		System.out.println("After");
 	}
 	
 	@Test
