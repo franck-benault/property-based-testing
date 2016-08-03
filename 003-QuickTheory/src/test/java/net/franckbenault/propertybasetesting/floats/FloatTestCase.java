@@ -3,7 +3,6 @@ package net.franckbenault.propertybasetesting.floats;
 import static org.quicktheories.quicktheories.QuickTheory.qt;
 import static org.quicktheories.quicktheories.generators.SourceDSL.floats;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class FloatTestCase {
