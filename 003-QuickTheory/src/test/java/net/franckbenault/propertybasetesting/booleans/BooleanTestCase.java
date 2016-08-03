@@ -1,6 +1,5 @@
 package net.franckbenault.propertybasetesting.booleans;
 
-import static org.junit.Assert.*;
 import static org.quicktheories.quicktheories.QuickTheory.qt;
 import static org.quicktheories.quicktheories.generators.SourceDSL.booleans;
 
