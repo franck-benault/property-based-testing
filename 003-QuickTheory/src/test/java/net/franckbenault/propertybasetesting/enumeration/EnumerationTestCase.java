@@ -3,8 +3,6 @@ package net.franckbenault.propertybasetesting.enumeration;
 import static org.quicktheories.quicktheories.QuickTheory.qt;
 import static org.quicktheories.quicktheories.generators.SourceDSL.integers;
 
-import java.util.Random;
-
 import org.junit.Test;
 import org.quicktheories.quicktheories.core.Generator;
 import org.quicktheories.quicktheories.core.Source;

@@ -10,7 +10,13 @@ import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 
 @RunWith(JUnitQuickcheck.class)
 public class IntegerTestCase {
-	
+
+	@Property(trials=5)
+	public void testRandom(
+			int a, 
+			int b) {
+		System.out.println("a="+a+", b="+b);
+	}
 	
 	@Property(trials=5)
 	public void testAplusBGreaterThanA(
