@@ -19,7 +19,7 @@ public class BooleanTestCase {
 	 * Seed = the random generated values are always the same...
 	 */
 	@Test
-	public void testAllIntegerWithSeed() {
+	public void testAllBooleansWithSeed() {
 		counter =0;
 		qt()
 		.withFixedSeed(0)
