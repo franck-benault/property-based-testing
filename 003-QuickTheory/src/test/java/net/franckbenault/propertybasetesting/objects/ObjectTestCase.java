@@ -1,6 +1,5 @@
 package net.franckbenault.propertybasetesting.objects;
 
-import static org.junit.Assert.*;
 
 import org.junit.Test;
 import org.quicktheories.quicktheories.core.Generator;
