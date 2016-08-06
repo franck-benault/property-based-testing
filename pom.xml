@@ -19,6 +19,7 @@
 			<dependency>
 				<groupId>org.testng</groupId>
 				<artifactId>testng</artifactId>
+				<scope>test</scope>
 				<version>6.9.10</version>
 			</dependency>
 			<dependency>
@@ -80,5 +81,6 @@
 		<module>001-Annotation-theory</module>
 		<module>002-JUnit-Quickcheck</module>
 		<module>003-QuickTheory</module>
+		<module>001b-Dataprovider-testNG</module>
 	</modules>
 </project>
