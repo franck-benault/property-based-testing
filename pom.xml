@@ -35,6 +35,12 @@
 				<version>${junit-quickcheck.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.theoryinpractise</groupId>
+				<artifactId>quickcheckng</artifactId>
+				<scope>test</scope>
+				<version>1.0.1</version>
+			</dependency>
+			<dependency>
 				<groupId>org.quicktheories</groupId>
 				<artifactId>quicktheories</artifactId>
 				<scope>test</scope>
@@ -82,5 +88,6 @@
 		<module>002-JUnit-Quickcheck</module>
 		<module>003-QuickTheory</module>
 		<module>001b-Dataprovider-testNG</module>
+		<module>002b-Quickcheckng</module>
 	</modules>
 </project>
