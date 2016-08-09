@@ -10,7 +10,7 @@ public class EnumerationTestCase {
 
 
 	public static enum JDKS {
-		JDK6, JDK7,
+		JDK6, JDK7, JDK8
 	}
 
 	@Theory
